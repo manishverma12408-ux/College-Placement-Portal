@@ -1,0 +1,319 @@
+/* ================================
+   GENERAL STYLING
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f7fb;
+    color: #222;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+header {
+    background-color: #14213d;
+    color: white;
+    padding: 20px 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #4cc9f0;
+}
+
+
+/* ================================
+   HERO SECTION
+================================ */
+
+#home {
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #14213d,
+        #1d4e89
+    );
+
+    color: white;
+}
+
+#home h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 19px;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+#home button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 6px;
+
+    background-color: #4cc9f0;
+    color: #14213d;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#home button:hover {
+    background-color: white;
+}
+
+
+/* ================================
+   COMMON SECTION
+================================ */
+
+section {
+    padding: 70px 8%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #14213d;
+}
+
+
+/* ================================
+   ABOUT
+================================ */
+
+#about {
+    background-color: white;
+    text-align: center;
+}
+
+#about p {
+    max-width: 850px;
+    margin: auto;
+
+    font-size: 17px;
+    color: #555;
+}
+
+
+/* ================================
+   FEATURES
+================================ */
+
+#features {
+    background-color: #f5f7fb;
+}
+
+#features > div {
+    background-color: white;
+
+    width: 30%;
+    min-height: 250px;
+
+    display: inline-block;
+    vertical-align: top;
+
+    margin: 1%;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+#features h3 {
+    color: #1d4e89;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+#features ul {
+    padding-left: 20px;
+}
+
+#features li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+
+/* ================================
+   LOGIN
+================================ */
+
+#login {
+    background-color: white;
+}
+
+form {
+    max-width: 450px;
+
+    margin: auto;
+
+    padding: 35px;
+
+    background-color: #f5f7fb;
+
+    border-radius: 10px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input,
+form select {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 7px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+form button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #14213d;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1d4e89;
+}
+
+
+/* ================================
+   CONTACT
+================================ */
+
+#contact {
+    text-align: center;
+    background-color: #f5f7fb;
+}
+
+#contact p {
+    margin: 8px;
+    color: #555;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    background-color: #14213d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #home h2 {
+        font-size: 32px;
+    }
+
+    #features > div {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 50px 5%;
+    }
+}

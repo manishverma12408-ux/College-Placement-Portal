@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>College Placement Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>College Placement Portal</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home">
+
+        <h2>Welcome to College Placement Portal</h2>
+
+        <p>
+            A centralized platform connecting students, companies,
+            and the college placement department.
+        </p>
+
+        <button onclick="location.href='#login'">
+            Get Started
+        </button>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+
+        <h2>About the Portal</h2>
+
+        <p>
+            The College Placement Portal helps students find placement
+            opportunities, allows companies to post job openings, and
+            enables placement officers to manage the complete recruitment
+            process.
+        </p>
+
+    </section>
+
+
+    <!-- Features -->
+    <section id="features">
+
+        <h2>Portal Features</h2>
+
+        <div>
+
+            <h3>Student</h3>
+            <ul>
+                <li>Create Profile</li>
+                <li>View Job Opportunities</li>
+                <li>Apply for Companies</li>
+                <li>Track Applications</li>
+                <li>View Placement Status</li>
+            </ul>
+
+        </div>
+
+
+        <div>
+
+            <h3>Company</h3>
+            <ul>
+                <li>Company Registration</li>
+                <li>Post Job Opportunities</li>
+                <li>View Eligible Students</li>
+                <li>Shortlist Candidates</li>
+                <li>Update Selection Status</li>
+            </ul>
+
+        </div>
+
+
+        <div>
+
+            <h3>Placement Officer</h3>
+            <ul>
+                <li>Manage Students</li>
+                <li>Manage Companies</li>
+                <li>Approve Job Posts</li>
+                <li>Manage Placement Drives</li>
+                <li>Generate Reports</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <!-- Login Section -->
+    <section id="login">
+
+        <h2>Login</h2>
+
+        <form>
+
+            <label for="role">Select User Type:</label>
+            <br>
+
+            <select id="role" name="role">
+
+                <option value="">-- Select Role --</option>
+                <option value="student">Student</option>
+                <option value="company">Company</option>
+                <option value="officer">Placement Officer</option>
+
+            </select>
+
+            <br><br>
+
+
+            <label for="email">Email:</label>
+            <br>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <br><br>
+
+
+            <label for="password">Password:</label>
+            <br>
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+            >
+
+            <br><br>
+
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2>Contact Placement Cell</h2>
+
+        <p>Email: placement@college.edu</p>
+        <p>Phone: +91 9876XXXXXX</p>
+        <p>College Placement Department</p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 College Placement Portal. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
